@@ -62,17 +62,14 @@ set mem(s)  [lindex $memory 19]
 
 # * ASCII head
 set head {
-   _ \                     |                  |           |....................
-  |   |   __|  _ \    __|  __|   _ \          __|   _` |  |  /      __|  |   |.
-  ___/   |    (   | \__ \  |    (   | _____|  |    (   |    <      |     |   |.
- _|     _|   \___/  ____/ \__| \___/         \__| \__,_| _|\_\ _) _|    \__,_|.
-...............................................................................
+
+
 
 }
 
 
 # * Print Output
-puts "\033\[01;32m$head\033\[0m"
+#puts "\033\[01;32m$head\033\[0m"
 puts "  \033\[35mLast Login....:\033\[0m \033\[36m$ll(1) $ll(2) $ll(3) $ll(4) from\033\[0m \033\[33m$ll(5)\033\[0m"
 puts "  \033\[35mUptime........:\033\[0m \033\[36m$up(days)days $up(hours)hours $up(mins)minutes $up(secs)seconds\033\[0m"
 puts "  \033\[35mLoad..........:\033\[0m \033\[36m$sysload(1) (1minute) $sysload(5) (5minutes) $sysload(15) (15minutes)\033\[0m"
